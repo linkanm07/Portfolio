@@ -1,34 +1,28 @@
+// Premium Scroll-Reveal Effect Configuration
+document.addEventListener('DOMContentLoaded', () => {
+    const revealElements = document.querySelectorAll('.skill-card, .service-box, .project-card, .contact-card');
 
-const texts = [
-"Full Stack Web Developer",
-"MERN Stack Developer",
-"React Developer",
-"Node.js Developer",
-"Frontend Specialist"
-];
+    const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+        revealElements.forEach(element => {
+            // Apply original styling properties programmatic setup
+            if (!element.style.transform) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+            }
 
-(function type() {
-if (count === texts.length) {
-count = 0;
-}
+            const elementTop = element.getBoundingClientRect().top;
 
-currentText = texts[count];
-letter = currentText.slice(0, ++index);
+            if (elementTop < triggerBottom) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    };
 
-document.getElementById("typing").textContent = letter;
-
-if (letter.length === currentText.length) {
-setTimeout(() => {
-index = 0;
-count++;
-type();
-}, 1500);
-} else {
-setTimeout(type, 80);
-}
-})();
+    // Run execution loop on initiation and consecutive scroll vectors
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial pass check
+});
