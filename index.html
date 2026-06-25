@@ -1,175 +1,261 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkan Mondal | Premium MERN Stack Engineer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Linkan Mondal | Premium MERN Stack Developer Portfolio</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="Portfolio of Linkan Mondal, a professional MERN Stack Developer specializing in building high-performance scalable web applications.">
+    <meta name="keywords" content="Linkan Mondal, MERN Stack Developer, React Developer, Node.js, Full Stack Engineer, Portfolio">
+    <meta name="author" content="Linkan Mondal">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons & Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet Connection -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scroll Reveal & Typewriter Third-Party Sources -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
-<body>
+<body class="premium-bg text-slate-100 min-h-screen overflow-x-hidden antialiased">
 
-    <canvas id="particle-canvas"></canvas>
-
-    <header class="navbar">
-        <div class="logo">LINKAN<span>.</span>M</div>
-        
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-
-        <nav class="nav-menu">
-            <a href="#hero" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">Expertise</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#projects" class="nav-link">Architectures</a>
-            <a href="#contact" class="btn-premium-nav">Initiate Brief</a>
-        </nav>
-    </header>
-
-    <section id="hero" class="hero-section">
-        <div class="hero-container">
-            <div class="hero-text">
-                <div class="badge-container">
-                    <span class="pulse-dot"></span>
-                    <span class="badge-text">Available for Global Remote Contracts</span>
-                </div>
-                <h1>Engineering Scalable <br><span class="gradient-text">MERN Ecosystems</span></h1>
-                <p class="hero-bio">Hi, I'm <strong>Linkan Mondal</strong>. Armed with 2+ years of dedicated development experience, I architect fast backend infrastructure and translate complex logic into ultra-premium user interfaces.</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn-primary-premium">Explore Systems</a>
-                    <a href="#contact" class="btn-secondary-premium">Secure Allocation</a>
-                </div>
-            </div>
-            <div class="hero-image-frame">
-                <div class="glow-effect"></div>
-                <div class="image-wrapper">
-                    <img src="https://i.postimg.cc/0jNzHNFL/IMG-20260403-000549.jpg" alt="Linkan Mondal Portfolio Portrait">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about-section">
-        <div class="section-header">
-            <span class="section-tag">01 // CORE COMPETENCY</span>
-            <h2 class="section-title">Technical Matrix</h2>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="card-glow"></div>
-                <i class="fa-brands fa-react tech-icon"></i>
-                <h3>Client-Side Interface</h3>
-                <p>React.js, Redux Toolkit state management, Next.js optimization, semantic HTML5 structure, modern layout engines via TailwindCSS, and asynchronous modern JavaScript (ES6+).</p>
-            </div>
-            <div class="skill-card">
-                <div class="card-glow"></div>
-                <i class="fa-brands fa-node-js tech-icon"></i>
-                <h3>Server-Side Frameworks</h3>
-                <p>Node.js runtime systems, highly efficient Express.js frameworks, RESTful API engine configurations, security middlewares, and advanced JWT token verification models.</p>
-            </div>
-            <div class="skill-card">
-                <div class="card-glow"></div>
-                <i class="fa-solid fa-database tech-icon"></i>
-                <h3>Database Engineering</h3>
-                <p>Non-relational data modeling using MongoDB, optimized schema designs using Mongoose, secure validation structures, and performant aggregation queries.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services-section">
-        <div class="section-header">
-            <span class="section-tag">02 // CAPABILITIES</span>
-            <h2 class="section-title">Professional Provisions</h2>
-        </div>
-        <div class="services-list">
-            <div class="service-row">
-                <div class="service-meta-num">01/</div>
-                <div class="service-main-content">
-                    <h3>Enterprise Full-Stack Engineering</h3>
-                    <p>Deployment of production-ready web applications leveraging the full power of the MERN stack. Engineered from the ground up to ensure structural integrity, speed, and seamless scaling profiles.</p>
-                </div>
-            </div>
-            <div class="service-row">
-                <div class="service-meta-num">02/</div>
-                <div class="service-main-content">
-                    <h3>Secure API Architecture Design</h3>
-                    <p>Building secure, scalable, and fully documented RESTful environments capable of maintaining complex routing layouts, dynamic business logic systems, and smooth data flow.</p>
-                </div>
-            </div>
-            <div class="service-row">
-                <div class="service-meta-num">03/</div>
-                <div class="service-main-content">
-                    <h3>Database Architecture & Security</h3>
-                    <p>Structuring robust schemas, integrating defensive security structures against standard injections, and deploying clean access controllers via Json Web Tokens.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects-section">
-        <div class="section-header">
-            <span class="section-tag">03 // ARCHITECTURES</span>
-            <h2 class="section-title">Production Templates Ready to Deploy</h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card-premium">
-                <div class="project-image-placeholder">
-                    <span>MERN ECOSYSTEM // ACTIVE</span>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">E-Commerce System Engine (DevStore)</span>
-                    <p>An enterprise-grade, secure digital commerce architecture. Features dynamic inventory synchronization pipelines, complex global state management via Redux, and encrypted Stripe checkout integrations.</p>
-                </div>
-            </div>
-            <div class="project-card-premium">
-                <div class="project-image-placeholder">
-                    <span>WEBSOCKET MATRIX // ACTIVE</span>
-                </div>
-                <div class="project-details">
-                    <span class="proj-category">Real-time Project Matrix (Taskify)</span>
-                    <p>A low-latency collaborative platform framework. Built on rapid WebSocket data frames to maintain state uniformity across multiple connected nodes instantly.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <div class="contact-card-container">
-            <span class="contact-pre">ENGAGEMENT HUB</span>
-            <h2>Let's build something exceptional.</h2>
-            <p>Whether configuring a global web enterprise or microservices framework, let's open an official channel.</p>
+    <!-- Premium Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent group">
+                &lt;LINKAN.<span class="text-white group-hover:text-cyan-400 transition-colors">DEV</span>/&gt;
+            </a>
             
-            <div class="contact-action-grid">
-                <a href="mailto:bc879652@gmail.com" class="action-item-box">
-                    <div class="action-icon-wrapper"><i class="fa-regular fa-envelope"></i></div>
-                    <h4>Direct Mailbox</h4>
-                    <span>bc879652@gmail.com</span>
-                </a>
-                <a href="https://wa.me/8801401352824" target="_blank" class="action-item-box">
-                    <div class="action-icon-wrapper"><i class="fa-brands fa-whatsapp"></i></div>
-                    <h4>Secure WhatsApp Chat</h4>
-                    <span>01401352824</span>
-                </a>
-                <a href="https://www.facebook.com/share/1JiczRBYoY/" target="_blank" class="action-item-box">
-                    <div class="action-icon-wrapper"><i class="fa-brands fa-facebook-f"></i></div>
-                    <h4>Network Profile</h4>
-                    <span>Facebook Connect</span>
-                </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="text-slate-400 hover:text-cyan-400 transition-colors duration-300">About</a>
+                <a href="#services" class="text-slate-400 hover:text-indigo-400 transition-colors duration-300">Services</a>
+                <a href="#skills" class="text-slate-400 hover:text-purple-400 transition-colors duration-300">Skills</a>
+                <a href="#projects" class="text-slate-400 hover:text-cyan-400 transition-colors duration-300">Projects</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/10 text-white font-semibold transition-all duration-300 shadow-lg">Let's Talk</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none text-slate-300 hover:text-white">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropout Menu -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full glass-card border-b border-white/10 py-6 px-8 flex flex-col space-y-4 text-center font-medium md:hidden">
+            <a href="#about" class="text-slate-300 hover:text-cyan-400 py-2">About</a>
+            <a href="#services" class="text-slate-300 hover:text-indigo-400 py-2">Services</a>
+            <a href="#skills" class="text-slate-300 hover:text-purple-400 py-2">Skills</a>
+            <a href="#projects" class="text-slate-300 hover:text-cyan-400 py-2">Projects</a>
+            <a href="#contact" class="inline-block px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-36 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6 reveal-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card border-cyan-500/20 text-xs text-cyan-400 tracking-widest uppercase font-mono">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Available for Elite Projects
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
+                    Linkan Mondal<br>
+                    <span class="text-3xl md:text-5xl bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent font-bold mt-2 inline-block">
+                        <span id="typewriter"></span>
+                    </span>
+                </h1>
+                <p class="text-slate-400 max-w-xl text-base md:text-lg leading-relaxed font-light">
+                    Architecting high-performance web systems using the power of **MongoDB, Express.js, React, and Node.js**. Focused on beautiful UI component design, seamless server routing, and scalable API structures.
+                </p>
+                
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#contact" class="px-7 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold hover:opacity-95 shadow-xl shadow-indigo-500/20 transition-all duration-300 transform hover:-translate-y-1">
+                        Hire Me <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-sm"></i>
+                    </a>
+                    <a href="#projects" class="px-7 py-4 rounded-xl glass-card text-slate-200 font-semibold hover:bg-white/5 border border-white/10 transition-all duration-300 transform hover:-translate-y-1">
+                        See Portfolio
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Headshot Wrapper -->
+            <div class="lg:col-span-5 flex justify-center reveal-right relative">
+                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden glass-card p-3 floating-element border-white/10 group hover:border-cyan-500/40 transition-all duration-500">
+                    <img src="https://i.postimg.cc/0jNzHNFL/IMG-20260403-000549.jpg" alt="Linkan Mondal" class="w-full h-full object-cover rounded-2xl filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60 rounded-2xl"></div>
+                </div>
+                <!-- Neon back glowing points -->
+                <div class="absolute -z-10 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl top-10 left-10"></div>
+                <div class="absolute -z-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl bottom-10 right-10"></div>
+            </div>
+        </div>
+
+        <!-- Dynamic Stats Counter Area -->
+        <div id="stats" class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-28 reveal-bottom">
+            <div class="glass-card p-8 rounded-2xl text-center group hover:border-cyan-500/30 transition-all duration-500">
+                <h3 class="text-4xl md:text-5xl font-black text-cyan-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="2">0</h3>
+                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Years of Experience</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center group hover:border-indigo-500/30 transition-all duration-500">
+                <h3 class="text-4xl md:text-5xl font-black text-indigo-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="12">0</h3>
+                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Core Tech Skills</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center group hover:border-purple-500/30 transition-all duration-500">
+                <h3 class="text-4xl md:text-5xl font-black text-purple-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="15">0</h3>
+                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Future Projects Planned</p>
             </div>
         </div>
     </section>
 
-    <footer class="premium-footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Linkan Mondal. All rights reserved. Crafted with architectural absolute precision.</p>
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
+            <span class="text-xs font-mono text-indigo-400 tracking-widest uppercase">Expertise Offers</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">Premium Engineering Services</h2>
+            <div class="h-1 w-16 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
         </div>
-    </footer>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
+                    <i class="fa-solid fa-laptop-code text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">Full Stack MERN Development</h3>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Custom secure web systems constructed with MongoDB, Express frameworks, modular React, and asynchronous Node.js microservices.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-indigo-500/30 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
+                    <i class="fa-solid fa-cubes text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold group-hover:text-indigo-400 transition-colors">RESTful API Architecture</h3>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Designing robust structural backend endpoints with secure JSON Web Token authentication, database aggregation pipelines, and complete error handling protocols.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-purple-500/30 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
+                    <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold group-hover:text-purple-400 transition-colors">Premium UI/UX Design Implementation</h3>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Translating sleek Figma artwork into hyper-responsive pages using declarative layouts, state managers, and fluid animation sets.</p>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
-</body>
-            </html>
+    <!-- Animated Skills Section -->
+    <section id="skills" class="py-24 px-6 max-w-7xl mx-auto bg-slate-950/30 rounded-3xl border border-white/5">
+        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
+            <span class="text-xs font-mono text-purple-400 tracking-widest uppercase">Tech Stack Inventory</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">MERN Competency Bars</h2>
+            <div class="h-1 w-16 bg-purple-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- MongoDB -->
+            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-solid fa-database text-green-500 text-lg"></i> MongoDB (Database Architecture)</span>
+                    <span class="text-green-400 text-xs font-mono">88%</span>
+                </div>
+                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-400 h-full rounded-full transition-all duration-1000 w-0" data-width="88%"></div>
+                </div>
+            </div>
+            <!-- Express JS -->
+            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-solid fa-server text-gray-400 text-lg"></i> Express.js (Server Framework)</span>
+                    <span class="text-slate-300 text-xs font-mono">85%</span>
+                </div>
+                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
+                    <div class="bg-gradient-to-r from-slate-400 to-slate-200 h-full rounded-full transition-all duration-1000 w-0" data-width="85%"></div>
+                </div>
+            </div>
+            <!-- React JS -->
+            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-brands fa-react text-cyan-400 text-lg"></i> React.js (Frontend Mastery)</span>
+                    <span class="text-cyan-400 text-xs font-mono">92%</span>
+                </div>
+                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-full rounded-full transition-all duration-1000 w-0" data-width="92%"></div>
+                </div>
+            </div>
+            <!-- Node JS -->
+            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-brands fa-node-js text-lime-400 text-lg"></i> Node.js (Backend Runtime)</span>
+                    <span class="text-lime-400 text-xs font-mono">87%</span>
+                </div>
+                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
+                    <div class="bg-gradient-to-r from-lime-500 to-green-500 h-full rounded-full transition-all duration-1000 w-0" data-width="87%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Modern Project Cards -->
+    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
+            <span class="text-xs font-mono text-cyan-400 tracking-widest uppercase">Production Showcase</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">Featured Architectures</h2>
+            <div class="h-1 w-16 bg-cyan-500 mx-auto mt-4 rounded-full"></div>
+            <p class="text-xs font-mono text-slate-500 mt-4 italic">[Concept Blueprints - Ready for Client Integration]</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-cyan-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
+                <div class="p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-500">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">QuantumCommerce Hub</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Comprehensive MERN platform deployment incorporating multi-threaded context stores, automated Stripe webhooks, and secure admin control tracking sheets.</p>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
+                    <span class="text-xs font-mono text-slate-500">React / Express / Mongo</span>
+                    <span class="text-xs font-semibold text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-md">Blueprint Active</span>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-indigo-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
+                <div class="p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-500">
+                        <i class="fa-solid fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-indigo-400 transition-colors">NexusSync Chat Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Real-time collaboration interface linking distributed clients via WebSockets with dynamic room clustering pipelines and historic chat storage setups.</p>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
+                    <span class="text-xs font-mono text-slate-500">Socket.io / Node.js</span>
+                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md">Blueprint Active</span>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-purple-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
+                <div class="p-6 space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-500">
+                        <i class="fa-solid fa-chart-line text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold group-hover:text-purple-400 transition-colors">SaaS Analytics Dashboard</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Data monitoring dashboard system parsing complex database pipelines into premium, interactive SVG graph overlays with smooth responsive refresh arrays.</p>
+                </div>
+                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
+                    <span class="text-xs font-mono text-slate-500">MERN / Recharts.js</span>
+   
