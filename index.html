@@ -1,217 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Linkan Mondal | MERN Stack Developer</title>
-
-<meta name="description" content="Professional MERN Stack Developer Portfolio">
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkan Mondal | Premium MERN Stack Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="cursor"></div>
+    <canvas id="particle-canvas"></canvas>
 
-<header class="header">
-    <div class="logo">LINKAN</div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="home" class="hero">
-
-    <div class="hero-left">
-
-        <span class="tag">
-            MERN STACK DEVELOPER
-        </span>
-
-        <h1>
-            Hi, I'm
-            <span>Linkan Mondal</span>
-        </h1>
-
-        <h2 id="typing"></h2>
-
-        <p>
-            Passionate developer with 2+ years of experience building modern,
-            scalable and user-friendly web applications.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#contact" class="btn primary">
-                Hire Me
-            </a>
-
-            <a href="https://github.com/linkanm07" class="btn secondary">
-                GitHub
-            </a>
+    <header class="navbar">
+        <div class="logo">LINKAN<span>.</span>M</div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
 
-    </div>
+        <nav class="nav-menu">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">Expertise</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#projects" class="nav-link">Architectures</a>
+            <a href="#contact" class="btn-premium-nav">Initiate Brief</a>
+        </nav>
+    </header>
 
-    <div class="hero-right">
+    <section id="hero" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text">
+                <div class="badge-container">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">Available for Global Remote Contracts</span>
+                </div>
+                <h1>Engineering Scalable <br><span class="gradient-text">MERN Ecosystems</span></h1>
+                <p class="hero-bio">Hi, I'm <strong>Linkan Mondal</strong>. Armed with 2+ years of dedicated development experience, I architect fast backend infrastructure and translate complex logic into ultra-premium user interfaces.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary-premium">Explore Systems</a>
+                    <a href="#contact" class="btn-secondary-premium">Secure Allocation</a>
+                </div>
+            </div>
+            <div class="hero-image-frame">
+                <div class="glow-effect"></div>
+                <div class="image-wrapper">
+                    <img src="https://i.postimg.cc/0jNzHNFL/IMG-20260403-000549.jpg" alt="Linkan Mondal Portfolio Portrait">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <img src="https://i.postimg.cc/0jNzHNFL/IMG-20260403-000549.jpg">
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-tag">01 // CORE COMPETENCY</span>
+            <h2 class="section-title">Technical Matrix</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="card-glow"></div>
+                <i class="fa-brands fa-react tech-icon"></i>
+                <h3>Client-Side Interface</h3>
+                <p>React.js, Redux Toolkit state management, Next.js optimization, semantic HTML5 structure, modern layout engines via TailwindCSS, and asynchronous modern JavaScript (ES6+).</p>
+            </div>
+            <div class="skill-card">
+                <div class="card-glow"></div>
+                <i class="fa-brands fa-node-js tech-icon"></i>
+                <h3>Server-Side Frameworks</h3>
+                <p>Node.js runtime systems, highly efficient Express.js frameworks, RESTful API engine configurations, security middlewares, and advanced JWT token verification models.</p>
+            </div>
+            <div class="skill-card">
+                <div class="card-glow"></div>
+                <i class="fa-solid fa-database tech-icon"></i>
+                <h3>Database Engineering</h3>
+                <p>Non-relational data modeling using MongoDB, optimized schema designs using Mongoose, secure validation structures, and performant aggregation queries.</p>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="section-tag">02 // CAPABILITIES</span>
+            <h2 class="section-title">Professional Provisions</h2>
+        </div>
+        <div class="services-list">
+            <div class="service-row">
+                <div class="service-meta-num">01/</div>
+                <div class="service-main-content">
+                    <h3>Enterprise Full-Stack Engineering</h3>
+                    <p>Deployment of production-ready web applications leveraging the full power of the MERN stack. Engineered from the ground up to ensure structural integrity, speed, and seamless scaling profiles.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-meta-num">02/</div>
+                <div class="service-main-content">
+                    <h3>Secure API Architecture Design</h3>
+                    <p>Building secure, scalable, and fully documented RESTful environments capable of maintaining complex routing layouts, dynamic business logic systems, and smooth data flow.</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service-meta-num">03/</div>
+                <div class="service-main-content">
+                    <h3>Database Architecture & Security</h3>
+                    <p>Structuring robust schemas, integrating defensive security structures against standard injections, and deploying clean access controllers via Json Web Tokens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</section>
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-  <div class="container">
-    <h2 class="section-title">About Me</h2>
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-tag">03 // ARCHITECTURES</span>
+            <h2 class="section-title">Production Templates Ready to Deploy</h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card-premium">
+                <div class="project-image-placeholder">
+                    <span>MERN ECOSYSTEM // ACTIVE</span>
+                </div>
+                <div class="project-details">
+                    <span class="proj-category">E-Commerce System Engine (DevStore)</span>
+                    <p>An enterprise-grade, secure digital commerce architecture. Features dynamic inventory synchronization pipelines, complex global state management via Redux, and encrypted Stripe checkout integrations.</p>
+                </div>
+            </div>
+            <div class="project-card-premium">
+                <div class="project-image-placeholder">
+                    <span>WEBSOCKET MATRIX // ACTIVE</span>
+                </div>
+                <div class="project-details">
+                    <span class="proj-category">Real-time Project Matrix (Taskify)</span>
+                    <p>A low-latency collaborative platform framework. Built on rapid WebSocket data frames to maintain state uniformity across multiple connected nodes instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="glass-card">
-      <p>
-        I'm Linkan Mondal, a passionate MERN Stack Developer from Bangladesh
-        with 2+ years of learning and development experience.
-        I enjoy building modern, responsive and user-friendly web applications
-        using MongoDB, Express.js, React.js and Node.js.
-      </p>
-    </div>
-  </div>
-</section>
+    <section id="contact" class="contact-section">
+        <div class="contact-card-container">
+            <span class="contact-pre">ENGAGEMENT HUB</span>
+            <h2>Let's build something exceptional.</h2>
+            <p>Whether configuring a global web enterprise or microservices framework, let's open an official channel.</p>
+            
+            <div class="contact-action-grid">
+                <a href="mailto:bc879652@gmail.com" class="action-item-box">
+                    <div class="action-icon-wrapper"><i class="fa-regular fa-envelope"></i></div>
+                    <h4>Direct Mailbox</h4>
+                    <span>bc879652@gmail.com</span>
+                </a>
+                <a href="https://wa.me/8801401352824" target="_blank" class="action-item-box">
+                    <div class="action-icon-wrapper"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h4>Secure WhatsApp Chat</h4>
+                    <span>01401352824</span>
+                </a>
+                <a href="https://www.facebook.com/share/1JiczRBYoY/" target="_blank" class="action-item-box">
+                    <div class="action-icon-wrapper"><i class="fa-brands fa-facebook-f"></i></div>
+                    <h4>Network Profile</h4>
+                    <span>Facebook Connect</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<!-- STATS -->
-<section class="stats">
-  <div class="stat-card">
-    <h3>2+</h3>
-    <p>Years Experience</p>
-  </div>
+    <footer class="premium-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Linkan Mondal. All rights reserved. Crafted with architectural absolute precision.</p>
+        </div>
+    </footer>
 
-  <div class="stat-card">
-    <h3>10+</h3>
-    <p>Technologies</p>
-  </div>
-
-  <div class="stat-card">
-    <h3>100%</h3>
-    <p>Learning Focus</p>
-  </div>
-
-  <div class="stat-card">
-    <h3>24/7</h3>
-    <p>Availability</p>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-  <div class="container">
-    <h2 class="section-title">Skills</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill">HTML5</div>
-      <div class="skill">CSS3</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">React.js</div>
-      <div class="skill">Node.js</div>
-      <div class="skill">Express.js</div>
-      <div class="skill">MongoDB</div>
-      <div class="skill">Git</div>
-      <div class="skill">GitHub</div>
-      <div class="skill">Firebase</div>
-
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section">
-  <div class="container">
-    <h2 class="section-title">Services</h2>
-
-    <div class="services-grid">
-
-      <div class="service-card">
-        <h3>Frontend Development</h3>
-        <p>Modern and responsive web interfaces.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Backend Development</h3>
-        <p>Secure APIs and scalable server solutions.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Full Stack Development</h3>
-        <p>Complete MERN stack web applications.</p>
-      </div>
-
-      <div class="service-card">
-        <h3>Website Optimization</h3>
-        <p>Performance and SEO improvements.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="glass-card">
-      <h3>Projects Coming Soon</h3>
-      <p>
-        New projects will be added here as they are completed.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <div class="container">
-
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact-box">
-
-      <a href="mailto:bc879652@gmail.com">
-        📧 Email
-      </a>
-
-      <a href="https://github.com/linkanm07" target="_blank">
-        💻 GitHub
-      </a>
-
-      <a href="https://www.facebook.com/share/1JiczRBYoY/" target="_blank">
-        📘 Facebook
-      </a>
-
-      <a href="https://wa.me/8801401352824" target="_blank">
-        💬 WhatsApp
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  © 2026 Linkan Mondal | MERN Stack Developer
-</footer>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
-</html>
+            </html>
+
