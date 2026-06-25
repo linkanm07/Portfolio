@@ -1,1 +1,179 @@
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(20px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00d4ff;
+}
+
+.hero{
+min-height:100vh;
+padding:120px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.tag{
+display:inline-block;
+padding:10px 18px;
+border:1px solid rgba(255,255,255,.1);
+border-radius:50px;
+background:rgba(255,255,255,.05);
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:10px;
+}
+
+.hero h1 span{
+background:linear-gradient(
+90deg,
+#00d4ff,
+#8b5cf6
+);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero h2{
+font-size:30px;
+margin-bottom:20px;
+color:#9ca3af;
+}
+
+.hero p{
+max-width:650px;
+line-height:1.8;
+font-size:18px;
+color:#cbd5e1;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin-top:30px;
+}
+
+.btn{
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.primary{
+background:linear-gradient(
+90deg,
+#00d4ff,
+#8b5cf6
+);
+color:white;
+}
+
+.secondary{
+border:1px solid rgba(255,255,255,.2);
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-right img{
+width:420px;
+height:420px;
+object-fit:cover;
+border-radius:30px;
+box-shadow:
+0 0 50px rgba(0,212,255,.25);
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero-right img{
+width:280px;
+height:280px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+nav{
+display:none;
+}
+
+}
