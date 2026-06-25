@@ -1,321 +1,65 @@
-
-/* --- Global Resets & Premium Theme Base --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    scroll-behavior: smooth;
-}
-
-:root {
-    --bg-main: #0B0F19;
-    --bg-surface: #131A2C;
-    --accent-cyan: #00F2FE;
-    --accent-purple: #4FACFE;
-    --text-primary: #F3F4F6;
-    --text-muted: #9CA3AF;
-    --border-color: rgba(255, 255, 255, 0.05);
-}
-
+/* Custom Portfolio Base Styles declarations */
 body {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
-    overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* --- Navigation Bar --- */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 8%;
-    background: rgba(11, 15, 25, 0.7);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--border-color);
-    z-index: 1000;
+.font-mono {
+    font-family: 'JetBrains Mono', monospace;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: -1px;
+/* Animated Gradient Background Layout */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.logo span {
-    color: var(--accent-cyan);
+.premium-bg {
+    background: linear-gradient(-45deg, #030712, #0b1528, #1e113a, #030712);
+    background-size: 400% 400%;
+    animation: gradientShift 18s ease infinite;
 }
 
-nav a {
-    color: var(--text-muted);
-    text-decoration: none;
-    margin-left: 2rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
+/* Structural Subtle Floating Effects */
+@keyframes subtleFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-12px) rotate(1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
 }
 
-nav a:hover {
-    color: var(--text-primary);
+.floating-element {
+    animation: subtleFloat 6s ease-in-out infinite;
 }
 
-/* --- UI Component Elements --- */
-.gradient-text {
-    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Glassmorphic Core Framework Components */
+.glass-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.badge {
-    background: rgba(0, 242, 254, 0.1);
-    color: var(--accent-cyan);
-    border: 1px solid rgba(0, 242, 254, 0.2);
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: inline-block;
-    margin-bottom: 1.5rem;
+.glass-nav {
+    background: rgba(3, 7, 18, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-b: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.btn-primary, .btn-outline, .btn-secondary {
-    padding: 0.8rem 1.8rem;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: inline-block;
+/* Modern Minimal Scrollbar UI */
+::-webkit-scrollbar {
+    width: 8px;
 }
 
-.btn-primary {
-    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
-    color: #000;
+::-webkit-scrollbar-track {
+    background: #030712;
 }
 
-.btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 242, 254, 0.2);
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 99px;
 }
 
-.btn-outline {
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    margin-left: 1rem;
-}
-
-.btn-outline:hover {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.btn-secondary {
-    padding: 0.5rem 1.2rem;
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--text-primary);
-    font-size: 0.9rem;
-}
-
-/* --- Hero Layout --- */
-.hero-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 8%;
-    padding-top: 100px;
-}
-
-.hero-container {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.hero-text h1 {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
-    letter-spacing: -1px;
-}
-
-.hero-text h2 {
-    font-size: 1.8rem;
-    color: var(--text-muted);
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-}
-
-.hero-text p {
-    color: var(--text-muted);
-    line-height: 1.7;
-    margin-bottom: 2.5rem;
-    max-width: 540px;
-}
-
-.image-wrapper {
-    position: relative;
-    border-radius: 24px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-    filter: grayscale(20%);
-    transition: filter 0.4s ease;
-}
-
-.image-wrapper:hover img {
-    filter: grayscale(0%);
-}
-
-/* --- Universal Grid Sections --- */
-.section-title {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 3rem;
-    letter-spacing: -0.5px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--text-muted);
-    margin-top: -2.5rem;
-    margin-bottom: 3rem;
-}
-
-.about-section, .services-section, .projects-section, .contact-section {
-    padding: 8rem 8%;
-}
-
-.skills-grid, .services-grid, .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-/* --- Card Styles --- */
-.skill-card, .service-box, .project-card {
-    background-color: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    padding: 2.5rem;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-}
-
-.skill-card:hover, .service-box:hover, .project-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 242, 254, 0.3);
-}
-
-.tech-icon {
-    font-size: 2rem;
-    color: var(--accent-cyan);
-    margin-bottom: 1.5rem;
-}
-
-.skill-card h3, .service-box h3, .project-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-
-.skill-card p, .service-box p, .project-card p {
-    color: var(--text-muted);
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-.service-num {
-    font-size: 2.5rem;
-    font-weight: 700;
-    opacity: 0.1;
-    margin-bottom: 0.5rem;
-}
-
-.project-meta {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--accent-purple);
-    margin-bottom: 0.5rem;
-}
-
-/* --- Contact Module --- */
-.contact-card {
-    background: linear-gradient(135deg, #131A2C, #0E1422);
-    border: 1px solid var(--border-color);
-    padding: 4rem;
-    border-radius: 24px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-card h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-}
-
-.contact-card p {
-    color: var(--text-muted);
-    margin-bottom: 2.5rem;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.contact-item {
-    color: var(--text-primary);
-    text-decoration: none;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.contact-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent-cyan);
-}
-
-/* --- Footer --- */
-footer {
-    text-align: center;
-    padding: 3rem;
-    border-top: 1px solid var(--border-color);
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-/* --- Responsive Adaptability --- */
-@media (max-width: 968px) {
-    .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .hero-text p {
-        margin: 0 auto 2.5rem auto;
-    }
-    .hero-image {
-        order: -1;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    nav {
-        display: none; /* Can be augmented with a hamburger menu later */
-    }
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
 }
