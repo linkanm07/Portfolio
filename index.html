@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
+        /* Social Links Glowing Hover Effect */
+.social-links a {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.social-links a:hover {
+    color: var(--accent-color);
+    transform: translateY(-5px);
+    filter: drop-shadow(0 0 8px var(--accent-color));
+}
+        
         /* --- CSS STYLING --- */
         :root {
             --bg-color: #0f172a;
@@ -359,14 +370,18 @@
             </div>
         </div>
     </section>
-
-    <section id="projects">
+   <section id="projects">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="grid-container">
-            <p class="placeholder-text">💡 Projects are currently being curated and cooked to perfection. Check back soon for live links and case studies!</p>
+        <div class="grid-container" style="justify-content: center; display: flex;">
+    <div class="card" style="opacity: 0.8; border: 2px dashed var(--accent-color); max-width: 500px;">
+        <i class="fas fa-tools animate-pulse"></i>
+        <h3>Enterprise Application In Progress</h3>
+        <p style="margin-top: 1rem; color: var(--text-muted);">
+            Currently architecting a high-performance web platform utilizing modern JavaScript frameworks. Production-ready live preview and GitHub repository tracking will be deployed shortly!
+        </p>
+    </div>
         </div>
-    </section>
-
+   </section>
     <section id="reviews">
         <h2 class="section-title">Client Feedback</h2>
         <div class="grid-container">
@@ -411,12 +426,51 @@
         <p>&copy; 2026 Linkan Mondal. All Rights Reserved. Powered by Professionalism.</p>
     </footer>
 
+      <!-- JAVASCRIPT FOR TYPING EFFECT -->
     <script>
-        // Simple Console Message verifying the portfolio setup
-        console.log("Welcome to Linkan Mondal's Professional Portfolio Website.");
+        const words = ["Professional Web Developer", "JavaScript Specialist", "Full-Stack Enthusiast"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
         
-        // Smooth scrolling enhancement or future interactive dynamic logic can go here.
+        // Target the main dynamic text element in hero section
+        const targetElement = document.querySelector(".hero-text h1");
+
+        function typeEffect() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                // Remove character
+                targetElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                // Add character
+                targetElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            // Document title or console log for confirmation
+            if (!isDeleting && charIndex === currentWord.length) {
+                // Pause at the end of a word
+                setTimeout(() => isDeleting = true, 1500);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                // Move to next word
+                wordIndex = (wordIndex + 1) % words.length;
+            }
+
+            // Set dynamic typing speed
+            const speed = isDeleting ? 50 : 100;
+            setTimeout(typeEffect, speed);
+        }
+
+        // Start the typing animation once DOM is fully loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            // Setup base text alignment placeholder if needed, then initiate
+            typeEffect();
+        });
     </script>
+
 </body>
 </html>
 
