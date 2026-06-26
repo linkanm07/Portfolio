@@ -297,18 +297,18 @@
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
+    </nav><div
 
     <header id="home">
-        <div class="hero-text">
-            <h3>Hello, I am</h3>
-            <h1>Linkan Mondal</h1>
-            <p>A passionate <strong>Professional Web Developer</strong> with over 2+ years of hands-on experience crafting clean, scalable, and high-performance websites & web applications.</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
-        <div class="hero-img">
-            <img src="https://i.postimg.cc/76n5p516/IMG-20260405-084041-831.webp" alt="Linkan Mondal">
-        </div>
+         <div class="hero-text">
+    <h3>Hello, I am</h3>
+    <h1 style="margin-bottom: 0.5rem;">Linkan Mondal</h1>
+    <h2 style="font-size: 2rem; color: var(--accent-color); margin-bottom: 1rem; min-height: 50px;">
+        I'm a <span id="typing-text"></span>
+    </h2>
+    <p>A passionate Professional MERN Stack Developer with over 2+ years of hands-on experience crafting clean, scalable, and high-performance full-stack websites & web applications.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+</div>
     </header>
 
     <section id="about">
@@ -477,48 +477,49 @@
         <p>&copy; 2026 Linkan Mondal. All Rights Reserved. Powered by Professionalism.</p>
     </footer>
 
-      <!-- JAVASCRIPT FOR TYPING EFFECT -->
+    <!-- JAVASCRIPT FOR PERFECT TYPING EFFECT -->
     <script>
-        const words = ["Professional Web Developer", "JavaScript Specialist", "Full-Stack Enthusiast"];
+        // MERN Stack focused titles
+        const words = ["MERN Stack Developer", "JavaScript Specialist", "Full-Stack Engineer"];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
         
-        // Target the main dynamic text element in hero section
-        const targetElement = document.querySelector(".hero-text h1");
+        // Target the newly created span element
+        const targetElement = document.getElementById("typing-text");
 
         function typeEffect() {
             const currentWord = words[wordIndex];
             
             if (isDeleting) {
-                // Remove character
                 targetElement.textContent = currentWord.substring(0, charIndex - 1);
                 charIndex--;
             } else {
-                // Add character
                 targetElement.textContent = currentWord.substring(0, charIndex + 1);
                 charIndex++;
             }
 
-            // Document title or console log for confirmation
+            let typingSpeed = isDeleting ? 40 : 80;
+
             if (!isDeleting && charIndex === currentWord.length) {
-                // Pause at the end of a word
-                setTimeout(() => isDeleting = true, 1500);
+                // Pause at the end of the full word
+                typingSpeed = 2000; 
+                isDeleting = true;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
-                // Move to next word
                 wordIndex = (wordIndex + 1) % words.length;
+                // Short pause before starting next word
+                typingSpeed = 500; 
             }
 
-            // Set dynamic typing speed
-            const speed = isDeleting ? 50 : 100;
-            setTimeout(typeEffect, speed);
+            setTimeout(typeEffect, typingSpeed);
         }
 
-        // Start the typing animation once DOM is fully loaded
+        // Run animation smoothly
         document.addEventListener("DOMContentLoaded", () => {
-            // Setup base text alignment placeholder if needed, then initiate
-            typeEffect();
+            if(targetElement) {
+                typeEffect();
+            }
         });
     </script>
 
