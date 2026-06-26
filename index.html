@@ -25,6 +25,11 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li style="margin-left: 2rem; display: flex; align-items: center;">
+    <button id="theme-toggle" style="background: transparent; border: none; color: var(--accent-color); cursor: pointer; font-size: 1.2rem;">
+        <i class="fas fa-moon"></i>
+    </button>
+            </li>
         </ul>
     </nav>
 
@@ -98,7 +103,7 @@
             <div class="card">
                 <i class="fas fa-server" style="color: #ffffff;"></i>
                 <h3>Express.js Framework</h3>
-                <p>Architecting secure RESTful APIs, clean MVC code structures, managing custom middlewares, robust request routing, global error handling, and CORS configurations.</p>
+                <p>Architecting secure RESTful APIs, clean MVC code structReact.jsures, managing custom middlewares, robust request routing, global error handling, and CORS configurations.</p>
             </div>
 
             <div class="card">
@@ -154,17 +159,23 @@
             </div>
         </div>
     </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="grid-container" style="justify-content: center; display: flex;">
-            <div class="card" style="opacity: 0.8; border: 2px dashed var(--accent-color); max-width: 500px;">
-                <i class="fas fa-tools animate-pulse"></i>
-                <h3>Enterprise Application In Progress</h3>
-                <p style="margin-top: 1rem; color: var(--text-muted);">
-                    Currently architecting a high-performance web platform utilizing modern JavaScript frameworks. Production-ready live preview and GitHub repository tracking will be deployed shortly!
-                </p>
+    <section id="services">
+        <h2 class="section-title">Services Offered</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-layer-group" style="color: #61dafb;"></i>
+                <h3>Full-Stack MERN Apps</h3>
+                <p>Developing end-to-end web applications featuring high-performance React.js frontends and robust Node.js/Express backends seamlessly integrated with MongoDB.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-network-wired" style="color: #68a063;"></i>
+                <h3>Secure RESTful APIs</h3>
+                <p>Architecting secure, fast, and scalable API endpoints with JWT token authentication, custom error-handling middlewares, and complex data pipeline operations.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shopping-cart" style="color: #f7df1e;"></i>
+                <h3>E-Commerce & Dashboards</h3>
+                <p>Building scalable e-commerce platforms and SaaS products integrated with dynamic admin control panels, secure checkout roles, and real-time database syncing.</p>
             </div>
         </div>
     </section>
