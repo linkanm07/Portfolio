@@ -1,261 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linkan Mondal | Premium MERN Stack Developer Portfolio</title>
-    
-    <!-- SEO Optimization -->
-    <meta name="description" content="Portfolio of Linkan Mondal, a professional MERN Stack Developer specializing in building high-performance scalable web applications.">
-    <meta name="keywords" content="Linkan Mondal, MERN Stack Developer, React Developer, Node.js, Full Stack Engineer, Portfolio">
-    <meta name="author" content="Linkan Mondal">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linkan Mondal | MERN Stack Developer</title>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- FontAwesome Icons & Animations -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom Style Sheet Connection -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Scroll Reveal & Typewriter Third-Party Sources -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
 </head>
-<body class="premium-bg text-slate-100 min-h-screen overflow-x-hidden antialiased">
 
-    <!-- Premium Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300 py-4">
-        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
-            <a href="#" class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent group">
-                &lt;LINKAN.<span class="text-white group-hover:text-cyan-400 transition-colors">DEV</span>/&gt;
-            </a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-                <a href="#about" class="text-slate-400 hover:text-cyan-400 transition-colors duration-300">About</a>
-                <a href="#services" class="text-slate-400 hover:text-indigo-400 transition-colors duration-300">Services</a>
-                <a href="#skills" class="text-slate-400 hover:text-purple-400 transition-colors duration-300">Skills</a>
-                <a href="#projects" class="text-slate-400 hover:text-cyan-400 transition-colors duration-300">Projects</a>
-                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-cyan-500/50 hover:bg-cyan-500/10 text-white font-semibold transition-all duration-300 shadow-lg">Let's Talk</a>
-            </div>
+<body>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button id="menu-btn" class="md:hidden text-2xl focus:outline-none text-slate-300 hover:text-white">
-                <i class="fa-solid fa-bars-staggered"></i>
-            </button>
-        </div>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>Linkan<span>Dev</span></h2>
+      </div>
 
-        <!-- Mobile Dropout Menu -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full glass-card border-b border-white/10 py-6 px-8 flex flex-col space-y-4 text-center font-medium md:hidden">
-            <a href="#about" class="text-slate-300 hover:text-cyan-400 py-2">About</a>
-            <a href="#services" class="text-slate-300 hover:text-indigo-400 py-2">Services</a>
-            <a href="#skills" class="text-slate-300 hover:text-purple-400 py-2">Skills</a>
-            <a href="#projects" class="text-slate-300 hover:text-cyan-400 py-2">Projects</a>
-            <a href="#contact" class="inline-block px-5 py-2.5 rounded-xl bg-cyan-500 text-slate-950 font-bold">Contact Me</a>
-        </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="about" class="pt-36 pb-20 px-6 max-w-7xl mx-auto min-h-screen flex flex-col justify-center relative">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <div class="lg:col-span-7 space-y-6 reveal-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card border-cyan-500/20 text-xs text-cyan-400 tracking-widest uppercase font-mono">
-                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Available for Elite Projects
-                </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none">
-                    Linkan Mondal<br>
-                    <span class="text-3xl md:text-5xl bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent font-bold mt-2 inline-block">
-                        <span id="typewriter"></span>
-                    </span>
-                </h1>
-                <p class="text-slate-400 max-w-xl text-base md:text-lg leading-relaxed font-light">
-                    Architecting high-performance web systems using the power of **MongoDB, Express.js, React, and Node.js**. Focused on beautiful UI component design, seamless server routing, and scalable API structures.
-                </p>
-                
-                <div class="pt-4 flex flex-wrap gap-4">
-                    <a href="#contact" class="px-7 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold hover:opacity-95 shadow-xl shadow-indigo-500/20 transition-all duration-300 transform hover:-translate-y-1">
-                        Hire Me <i class="fa-solid fa-arrow-up-right-from-square ml-1.5 text-sm"></i>
-                    </a>
-                    <a href="#projects" class="px-7 py-4 rounded-xl glass-card text-slate-200 font-semibold hover:bg-white/5 border border-white/10 transition-all duration-300 transform hover:-translate-y-1">
-                        See Portfolio
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Hero Headshot Wrapper -->
-            <div class="lg:col-span-5 flex justify-center reveal-right relative">
-                <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden glass-card p-3 floating-element border-white/10 group hover:border-cyan-500/40 transition-all duration-500">
-                    <img src="https://i.postimg.cc/0jNzHNFL/IMG-20260403-000549.jpg" alt="Linkan Mondal" class="w-full h-full object-cover rounded-2xl filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-60 rounded-2xl"></div>
-                </div>
-                <!-- Neon back glowing points -->
-                <div class="absolute -z-10 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl top-10 left-10"></div>
-                <div class="absolute -z-10 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl bottom-10 right-10"></div>
-            </div>
-        </div>
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
 
-        <!-- Dynamic Stats Counter Area -->
-        <div id="stats" class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-28 reveal-bottom">
-            <div class="glass-card p-8 rounded-2xl text-center group hover:border-cyan-500/30 transition-all duration-500">
-                <h3 class="text-4xl md:text-5xl font-black text-cyan-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="2">0</h3>
-                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Years of Experience</p>
-            </div>
-            <div class="glass-card p-8 rounded-2xl text-center group hover:border-indigo-500/30 transition-all duration-500">
-                <h3 class="text-4xl md:text-5xl font-black text-indigo-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="12">0</h3>
-                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Core Tech Skills</p>
-            </div>
-            <div class="glass-card p-8 rounded-2xl text-center group hover:border-purple-500/30 transition-all duration-500">
-                <h3 class="text-4xl md:text-5xl font-black text-purple-400 tracking-tight group-hover:scale-105 transition-transform duration-300" data-target="15">0</h3>
-                <p class="text-slate-400 text-xs mt-3 uppercase tracking-widest font-mono font-medium">Future Projects Planned</p>
-            </div>
-        </div>
-    </section>
+    <div class="hero-content">
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
-            <span class="text-xs font-mono text-indigo-400 tracking-widest uppercase">Expertise Offers</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">Premium Engineering Services</h2>
-            <div class="h-1 w-16 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-cyan-500/30 transition-all duration-300 group">
-                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
-                    <i class="fa-solid fa-laptop-code text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">Full Stack MERN Development</h3>
-                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Custom secure web systems constructed with MongoDB, Express frameworks, modular React, and asynchronous Node.js microservices.</p>
-            </div>
-            <!-- Service 2 -->
-            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-indigo-500/30 transition-all duration-300 group">
-                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
-                    <i class="fa-solid fa-cubes text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-indigo-400 transition-colors">RESTful API Architecture</h3>
-                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Designing robust structural backend endpoints with secure JSON Web Token authentication, database aggregation pipelines, and complete error handling protocols.</p>
-            </div>
-            <!-- Service 3 -->
-            <div class="glass-card p-8 rounded-2xl hover:bg-white/5 border border-white/5 hover:border-purple-500/30 transition-all duration-300 group">
-                <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-500 shadow-inner">
-                    <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold group-hover:text-purple-400 transition-colors">Premium UI/UX Design Implementation</h3>
-                <p class="text-slate-400 text-sm mt-3 leading-relaxed font-light">Translating sleek Figma artwork into hyper-responsive pages using declarative layouts, state managers, and fluid animation sets.</p>
-            </div>
-        </div>
-    </section>
+      <h1>Hi, I'm <span>Linkan Mondal</span></h1>
 
-    <!-- Animated Skills Section -->
-    <section id="skills" class="py-24 px-6 max-w-7xl mx-auto bg-slate-950/30 rounded-3xl border border-white/5">
-        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
-            <span class="text-xs font-mono text-purple-400 tracking-widest uppercase">Tech Stack Inventory</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">MERN Competency Bars</h2>
-            <div class="h-1 w-16 bg-purple-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <!-- MongoDB -->
-            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-solid fa-database text-green-500 text-lg"></i> MongoDB (Database Architecture)</span>
-                    <span class="text-green-400 text-xs font-mono">88%</span>
-                </div>
-                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
-                    <div class="bg-gradient-to-r from-green-500 to-emerald-400 h-full rounded-full transition-all duration-1000 w-0" data-width="88%"></div>
-                </div>
-            </div>
-            <!-- Express JS -->
-            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-solid fa-server text-gray-400 text-lg"></i> Express.js (Server Framework)</span>
-                    <span class="text-slate-300 text-xs font-mono">85%</span>
-                </div>
-                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
-                    <div class="bg-gradient-to-r from-slate-400 to-slate-200 h-full rounded-full transition-all duration-1000 w-0" data-width="85%"></div>
-                </div>
-            </div>
-            <!-- React JS -->
-            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-brands fa-react text-cyan-400 text-lg"></i> React.js (Frontend Mastery)</span>
-                    <span class="text-cyan-400 text-xs font-mono">92%</span>
-                </div>
-                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
-                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 h-full rounded-full transition-all duration-1000 w-0" data-width="92%"></div>
-                </div>
-            </div>
-            <!-- Node JS -->
-            <div class="glass-card p-6 rounded-2xl hover:border-white/10 transition-all">
-                <div class="flex justify-between items-center mb-3">
-                    <span class="font-semibold text-sm tracking-wide flex items-center gap-2.5"><i class="fa-brands fa-node-js text-lime-400 text-lg"></i> Node.js (Backend Runtime)</span>
-                    <span class="text-lime-400 text-xs font-mono">87%</span>
-                </div>
-                <div class="w-full bg-white/5 h-2 rounded-full overflow-hidden p-[1px]">
-                    <div class="bg-gradient-to-r from-lime-500 to-green-500 h-full rounded-full transition-all duration-1000 w-0" data-width="87%"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <h3>
+        <span class="typing">MERN Stack Developer</span>
+      </h3>
 
-    <!-- Modern Project Cards -->
-    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-xl mx-auto mb-16 reveal-bottom">
-            <span class="text-xs font-mono text-cyan-400 tracking-widest uppercase">Production Showcase</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold mt-1">Featured Architectures</h2>
-            <div class="h-1 w-16 bg-cyan-500 mx-auto mt-4 rounded-full"></div>
-            <p class="text-xs font-mono text-slate-500 mt-4 italic">[Concept Blueprints - Ready for Client Integration]</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Project Card 1 -->
-            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-cyan-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
-                <div class="p-6 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-500">
-                        <i class="fa-solid fa-cart-shopping text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold group-hover:text-cyan-400 transition-colors">QuantumCommerce Hub</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed font-light">Comprehensive MERN platform deployment incorporating multi-threaded context stores, automated Stripe webhooks, and secure admin control tracking sheets.</p>
-                </div>
-                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
-                    <span class="text-xs font-mono text-slate-500">React / Express / Mongo</span>
-                    <span class="text-xs font-semibold text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded-md">Blueprint Active</span>
-                </div>
-            </div>
+      <p>
+        Passionate Full Stack Developer with 2+ years of experience building
+        modern, responsive and scalable web applications.
+      </p>
 
-            <!-- Project Card 2 -->
-            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-indigo-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
-                <div class="p-6 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-500">
-                        <i class="fa-solid fa-comments text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold group-hover:text-indigo-400 transition-colors">NexusSync Chat Engine</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed font-light">Real-time collaboration interface linking distributed clients via WebSockets with dynamic room clustering pipelines and historic chat storage setups.</p>
-                </div>
-                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
-                    <span class="text-xs font-mono text-slate-500">Socket.io / Node.js</span>
-                    <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-2.5 py-1 rounded-md">Blueprint Active</span>
-                </div>
-            </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
 
-            <!-- Project Card 3 -->
-            <div class="glass-card rounded-2xl overflow-hidden group hover:scale-[1.02] hover:border-purple-500/30 transition-all duration-500 flex flex-col justify-between reveal-bottom">
-                <div class="p-6 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-500">
-                        <i class="fa-solid fa-chart-line text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold group-hover:text-purple-400 transition-colors">SaaS Analytics Dashboard</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed font-light">Data monitoring dashboard system parsing complex database pipelines into premium, interactive SVG graph overlays with smooth responsive refresh arrays.</p>
-                </div>
-                <div class="p-6 pt-0 flex justify-between items-center border-t border-white/5 mt-6">
-                    <span class="text-xs font-mono text-slate-500">MERN / Recharts.js</span>
-   
+      <div class="social-icons">
+        <a href="https://github.com/linkanm07" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/share/192gTWE9Ru/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:bc879652@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="https://i.postimg.cc/76n5p516/IMG-20260405-084041-831.webp" alt="Profile Photo">
+    </div>
+
+  </section>
+
+</body>
+</html>
