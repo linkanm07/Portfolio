@@ -43,3 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTypingAnimation();
     }
 });
+// --- PREMIUM LIGHT/DARK MODE TOGGLE ---
+const themeToggle = document.getElementById('theme-toggle');
+const toggleIcon = themeToggle.querySelector('i');
+
+themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'light') {
+        document.documentElement.removeAttribute('data-theme');
+        toggleIcon.className = 'fas fa-moon';
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        toggleIcon.className = 'fas fa-sun';
+    }
+});
