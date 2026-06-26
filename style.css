@@ -93,3 +93,14 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 8%;
+  background: #0f172a;
+  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+             }
